@@ -72,9 +72,16 @@
 								<td>${ c.course.fees }</td>
 								<td>${ c.course.duration }</td>
 								<td>${ c.course.description }</td>
-
-							</tr>
-
+								<td>
+								 <c:url var="re" value="/registration">
+								  <c:param name="classId" value="${c.id }"></c:param>
+								 </c:url>
+								 
+								 <a href="${re }" style="text-decoration: none">Registration</a>
+								</td>
+				           </tr>
+							
+							
 						</c:forEach>
 					</tbody>
 

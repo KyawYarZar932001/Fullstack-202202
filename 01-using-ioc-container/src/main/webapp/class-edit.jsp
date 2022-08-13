@@ -24,12 +24,50 @@
 
 	<div class="container mt-4">
 
-		<h1>Using IoC Container</h1>
-		<h3>Add new Class For ${course.name }</h3>
+		<h1>Add new Class For ${course.name }</h1>
 
 		<div class="row">
-			<div class="col-4"></div>
+			<div class="col-6">
+			
+			 <c:url var="save" value="/classes">
+			  <c:param name="courseId" value="${course.id }"></c:param>
+			 </c:url>
+			 	<form action="${save }" method="post">
+			 	
+			 	   <div class="mb-4">
+			 	   
+			 	     <label for="id"  class="form-label">Course Id</label>
+			 	     <input type="text" readonly="readonly" class="form-control" name="id" 
+			 	     value="${course.id }" required="required" />
+			 	   </div>
+			 	   
+			 	   <div class="mb-4">
+			 	    <label for="courseName" class="form-label">Couse Name</label>
+			 	    <input type="text" readonly="readonly" class="form-control" name="courseName"
+			 	    value="${course.name }" required="required" />
+			 	   </div>
+			 	   
+			 	   <div class="mb-4">
+			 	    <label for="teacher" class="form-label">Teacher</label>
+			 	    <input type="text" class="form-control" name="teacher"
+			 	    placeholder="Enter Name" required="required"/>
+			 	   </div>
+			 	   
+			 	   <div class="mb-4">
+			 	    <label for="startDate" class="form-label">StartDate</label>
+			 	    <input type="date" class="form-control" name="startDate"
+			 	    placeholder="Enter Start Date" required="required" />
+			 	   </div>
+			 	   
+			 	   <input type="submit" value="Save Class" class="btn btn-primary" />
+			 	   <input type="reset" value="Clear Class" class="btn btn-danger" />
+			 	</form>
+			 
+			 
+			</div>
 		</div>
+		
+		
 
 	</div>
 

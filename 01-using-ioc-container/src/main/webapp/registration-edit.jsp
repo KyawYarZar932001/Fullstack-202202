@@ -36,20 +36,20 @@
 
 
 					<div class="mb-4">
-					   <label for="student" class="form-label"><b>StudentName</b></label> 
+					   <label for="student" class="form-label">StudentName</label> 
 					   <input type="text" class="form-control" name="student"
 							placeholder="Enter Student Name !" required="required" />
 					</div>
 
 					<div class="mb-4">
-						<label for="phone" class="form-label"><b>Phone Number</b></label>
+						<label for="phone" class="form-label">Phone Number</label>
 						<input type="number" class="form-control" name="phone"
 							placeholder="Enter Phone Number !" required="required" />
 					</div>
 
 
 					<div class="mb-4">
-						<label for="email" class="form-label"><b>Email</b></label> 
+						<label for="email" class="form-label">Email</label> 
 						<input type="text" class="form-control" name="email"
 							placeholder="Enter Email!" required="required" />
 					</div>

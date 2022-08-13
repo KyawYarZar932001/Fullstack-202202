@@ -33,7 +33,7 @@ public class RegistrationServlet extends AbstractBeanFactoryServlet{
 	   case"/registration" -> {
 		   
 		   var model = getBean("registrationModel", RegistrationModel.class);
-		   req.setAttribute("registration", model.findByClass(Integer.parseInt(classId)));
+		   req.setAttribute("re", model.findByClass(Integer.parseInt(classId)));
 		   yield"/registration";
 	   }
 	   default -> "registration-edit";
@@ -67,7 +67,7 @@ public class RegistrationServlet extends AbstractBeanFactoryServlet{
 
 			// Redirect Process
 
-		     resp.sendRedirect("/registration?classId="+ classId);
+		     resp.sendRedirect("/registration?classId="+classId);
 	    	
 	    }
 	

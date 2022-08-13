@@ -24,12 +24,12 @@
 
 	<div class="container mt-4">
 
-		<h1 style="text-align: center; color: blue;">REGISTRATION</h1>
+		<h1>REGISTRATION</h1>
 		<div>
 			<c:url var="addRe" value="/registration-edit">
 				<c:param name="classId" value="${openClass.id}"></c:param>
 			</c:url>
-			<a href="${addRe }" class="btn btn-primary">Add
+			<a href="${addRe}" class="btn btn-primary">Add
 				new Registration</a>
 		</div>
 
